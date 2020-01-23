@@ -1,0 +1,253 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif;}
+a { color: inherit; text-decoration: none;}
+.container { max-width: 1200px; margin: auto; }
+.clear { clear: both; }
+.active { color: orange; }
+#web-design { color: white; font-weight: 100; }
+section { padding: 2rem;}
+input, button { border: none;}
+
+
+
+/*  Header Section
+ ***************************************************** */
+#main-header {
+  width: 40%;
+  float: left;
+  color: white; background-color: darkslategrey;
+  padding: 1rem 2rem;
+}
+.logo-container {
+  width: 17rem;
+  color: darkslategray; background-color:darkorange;
+}
+#main-header p#logo {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  border: white 1px solid;
+}
+#main-nav {
+  width: 60%;
+  float: right;
+  text-align: center;
+  color: white; background-color: darkslategray;
+  font-size: 1.2rem;
+  padding: 2.25rem 0;
+}
+#main-nav ul {
+  list-style-type: none;
+}
+#main-nav li {
+  display: inline-block;
+  margin-left: 5rem;
+}
+#main-nav li:first-child {
+  margin-left: 0;
+}
+
+
+/*  Footer Section
+ ***************************************************** */
+ footer {
+  color: white; background-color: darkorange;
+  text-align: center;
+}
+footer p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  padding: 1rem;
+}
+
+
+/*  Home Page
+ ***************************************************** */
+section#showcase {
+  width: 100%;
+  height: 40vh;
+  color: white;
+  background-image: url(../img/bg1@700.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#showcase h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+p#showcase-text { line-height: 1.5;}
+
+
+section#newsletter {
+  color: white; background-color: darkslategray;
+  text-align: center;
+}
+section#newsletter h2 {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+section#newsletter input {
+  width: 15rem;
+  padding: .5rem;
+}
+section#newsletter button {
+  color: white; background-color: darkorange;
+  font-size: 1.2rem;
+  padding: .4rem;
+  border-radius: .2rem;
+}
+section.boxes {
+  width: 100%;
+  background-color: #404040;
+  border-top: darkorange 1px solid;
+}
+
+section.boxes .box {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+section.boxes .box h3 {
+  color: white;
+}
+
+
+/*  About Page
+ ***************************************************** */
+aside#about-us {
+  float: left;
+  width: 50%; height: 50%;
+  background-color: #404040;
+  text-align: center;
+  padding: 2rem;
+}
+aside#about-us img {
+  max-width: 100%;
+}
+
+section.main-section { 
+  float: right;
+  width: 50%;
+}
+section.main-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+/*  Services Page
+ ***************************************************** */
+ #services-main-section {
+   width: 50%; 
+   padding: 2rem;
+ }
+ #services-main-section h1{
+  text-align: center;
+ }
+ #services-main-section .services-boxes {
+   width: 90%;
+   background-color: lightgray;
+   margin: 1rem 0;
+   padding: .5rem;
+   border: 1px solid black;
+   border-radius: .5rem;
+ }
+ #services-main-section .services-boxes h2 {
+   text-align: center;
+ }
+
+
+
+
+
+
+/* *****************************************************
+ * Devices
+ ***************************************************** */
+
+
+ /* Tablet Media Queries Section
+ ***************************************************** */
+@media (max-width: 760px) {
+  #main-header, 
+  #main-nav, 
+  section.boxes .box, 
+  aside#about-us,
+  section.main-section {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
+
+  #main-header { 
+    padding: 1rem .5rem;
+    border-bottom: 1px solid orange; 
+  }
+
+  .logo-container { margin: auto; }
+
+  #main-nav {
+    padding: 1rem 0;
+  }
+
+
+  section.boxes .box img {
+    width: 50%;
+  }
+  section.boxes h3 {
+    padding-top: 1rem;
+  }
+  section.boxes h3#ux-text {
+    padding-bottom: 1rem;
+  }
+
+  section.main-section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+}
+
+
+/* Cell Phone Media Queries Section
+ ***************************************************** */
+@media (max-width: 425px) {
+
+  #main-nav li {
+    margin-left: 3rem;
+  }
+
+
+  section#showcase h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+
+  section#newsletter h2 {
+    font-size: 1.4rem;
+  }
+  section#newsletter input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  section#newsletter button {
+    width: 100%;
+  }
+
+}
+
+
+/* IoT Media Queries Section
+ ***************************************************** */
+
+ @media(max-width: 320px) {
+
+  #main-nav li {
+    margin-left: 1.4rem;
+  }
+
+}
